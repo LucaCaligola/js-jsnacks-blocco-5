@@ -8,3 +8,23 @@
 // Infine stampa separatamente i 3 array.
 
 
+const automobili = [
+
+{   marca: 'BMW', modello: '18D', alimentazione: 'diesel'}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
