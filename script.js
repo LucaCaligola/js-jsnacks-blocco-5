@@ -10,21 +10,39 @@
 
 const automobili = [
 
-{   marca: 'BMW', modello: '18D', alimentazione: 'diesel'}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{marca: 'BMW', modello: '18D', alimentazione: 'diesel'},
+{marca: 'Mercedes', modello: 'Classe H', alimentazione: 'benzina'},
+{marca: 'Ford', modello: 'mustang', alimentazione: 'Elettrico'},
+{marca: 'Fiat', modello:'fiorino', alimentazione:'metano'},
+{marca: 'BMW', modello: '38D', alimentazione: 'diesel'},
+{marca: 'Mercedes', modello: 'Classe Y', alimentazione: 'benzina'},
+{marca: 'Ford', modello: 'focus', alimentazione: 'Elettrico'},
+{marca: 'Fiat', modello:'panda', alimentazione:'gpl'},
+{marca: 'Ferrari', modello:'Roma', alimentazione:'benzina'},
+{marca: 'Lambo', modello:'Urus', alimentazione:'benzina'}
 ]
+
+const benzina = automobili.filter((Engine) => {
+    if (Engine.alimentazione == 'benzina') {
+        return true;
+    }
+    return false;
+});
+console.log(benzina)
+
+const diesel = automobili.filter((Engine) => {
+    if (Engine.alimentazione == 'diesel') {
+        return true;
+    }
+    return false;
+});
+console.log(diesel)
+
+const diverse = automobili.filter((Engine) => {
+    if (Engine.alimentazione !== 'diesel' && Engine.alimentazione !== 'benzina') {
+        return true;
+    }
+    return false;
+});
+
+console.log(diverse)
