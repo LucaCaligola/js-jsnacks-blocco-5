@@ -4,17 +4,17 @@
 // punti fatti e falli subiti
 
 
-const array = 
+const array = [
 
-{
-    nome: 'Volley CLub', punti:'', falli:''
-
-}
-
-console.log(array.punti)
+{   nome: 'Volley Club', punti: getRandomNumber(), falli: getRandomNumber()},
+{   nome: 'Volley X', punti: getRandomNumber(), falli: getRandomNumber()},
+{   nome: 'Volley Y', punti: getRandomNumber(), falli: getRandomNumber()},
+{   nome: 'Volley Z', punti: getRandomNumber(), falli: getRandomNumber()}
+]
+console.log(array)
 
 function getRandomNumber(min,max) {
     min = 1;
     max = 90;
-    return Math.floor(math.random() * (max - min) + min);
+    return Math.floor(Math.random() * (max - min) + min);
 }
