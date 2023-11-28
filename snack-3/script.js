@@ -8,12 +8,21 @@
 // Nel caso la tab fosse attiva, deve attivare la successiva.
 
 
+const window =
 {
-    tab: ["Facebook", "GitHub", "Gmail","YouTube","X","Corriere"];
+   tab : ["Facebook", "GitHub", "Gmail","YouTube","X","Corriere"],
     activeTab: 0
 }
 
 const social = ["Afacebook", "GitHub", "YouTube", "X", "Corriere"];
 
 
-const newTab = tab.map
+window.tab = window.tab.filter((element)=> {
+
+    if (social.includes(element)) {
+        return true;
+    }
+    return false
+})
+
+console.log(newTab)
